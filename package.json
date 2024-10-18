@@ -1,0 +1,21 @@
+{
+  "name": "playwright_bdd_git",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "bddgen":"npx bddgen",
+    "test": "npm run bddgen && npm run playwright-test",
+    "playwright-test": "npx playwright test --reporter=html,list --headed"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.0.1",
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.7.6",
+    "playwright-bdd": "^7.5.0"
+  }
+}
