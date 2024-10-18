@@ -8,13 +8,11 @@ When('I click on Edit your account information', async ({changeNamePage}) => {
 });
 
 When('I change first name to {string}', async ({changeNamePage}, fname) => {
-    await console.log(`====>${fname}`)
     await changeNamePage.enterFirstName(fname)  
 
 });
 
 When('I change last name to {string}', async ({changeNamePage}, lname) => {
-    await console.log(`====>${lname}`)
     await changeNamePage.enterLastName(lname);    
 });
 

@@ -11,7 +11,6 @@ class LoginPage {
 
   async navigateToUrl(url) {
     await this.page.goto(url);
-    await this.page.pause()
   }
 
   async clickOnMyAccount() {
