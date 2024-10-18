@@ -18,13 +18,10 @@ class ChangeNamePage {
 
 
   async enterFirstName(fname) {
-    await console.log(`--->${fname}`)
-    await this.firstNameTxt.clear()
     await this.firstNameTxt.fill(fname);
   }
 
   async enterLastName(lname) {
-    await console.log(`--->${lname}`)
     await this.lastNameTxt.fill(lname);
   }
 
